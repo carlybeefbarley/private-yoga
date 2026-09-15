@@ -1,0 +1,331 @@
+/* --------------------
+   Base styles
+-------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2f302c;
+    background-color: #f7f5f0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 4rem;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    max-width: 650px;
+}
+
+
+/* --------------------
+   Navigation
+-------------------- */
+
+header {
+    padding: 1.5rem 5%;
+    background-color: #f7f5f0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #2f302c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #2f302c;
+    text-decoration: none;
+}
+
+
+/* --------------------
+   General sections
+-------------------- */
+
+section {
+    padding: 7rem 5%;
+}
+
+section > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --------------------
+   Hero
+-------------------- */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    background-color: #ded9ce;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.photo-placeholder {
+    min-height: 500px;
+    background-color: #c8c3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --------------------
+   Buttons
+-------------------- */
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.9rem 1.5rem;
+    background-color: #2f302c;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+/* --------------------
+   Lists
+-------------------- */
+
+ul,
+ol {
+    max-width: 650px;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+
+/* --------------------
+   Footer
+-------------------- */
+
+footer {
+    padding: 2rem 5%;
+    text-align: center;
+    background-color: #2f302c;
+    color: white;
+}
+
+/* ---------------------
+    Misc
+----------------------*/
+
+.about-image {
+    width: 40%;
+}
+
+.about-image .photo-placeholder {
+    min-height: 550px;
+}
+
+#about {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-content {
+    width: 55%;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-image .photo-placeholder {
+    min-height: 550px;
+}
+
+#private-yoga {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    background-color: #f0ede6;
+}
+
+.private-yoga-content {
+    width: 55%;
+}
+
+.private-yoga-image {
+    width: 40%;
+}
+
+.private-yoga-image .photo-placeholder {
+    min-height: 450px;
+}
+
+.steps {
+    display: flex;
+    gap: 3rem;
+}
+
+.step {
+    flex: 1;
+}
+
+#values {
+    background-color: #f0ede6;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+    padding: 4rem 5% 5rem;
+}
+
+#contact h2 {
+    font-size: 2rem;
+}
+
+/* --------------------
+   Mobile
+-------------------- */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 5rem 6%;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+}
+
+/* --------------------
+   Mobile
+-------------------- */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 5rem 6%;
+    }
+
+    .hero {
+        min-height: 65vh;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .hero-content,
+    .hero-image {
+    width: 100%;
+    }
+
+    .hero {
+    flex-direction: column;
+    }
+
+    .about-content,
+    .about-image {
+    width: 100%;
+    }
+
+    #about {
+    flex-direction: column;
+    }
+
+    .private-yoga-content,
+    .private-yoga-image {
+    width: 100%;
+    }
+
+    #private-yoga {
+    flex-direction: column;
+    }
+}
+
