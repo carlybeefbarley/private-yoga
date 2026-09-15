@@ -302,6 +302,7 @@ footer {
 }
 
     .nav-links {
+        width: 100%;
         gap: 1rem;
         font-size: 0.85rem;
         flex-wrap: wrap;
