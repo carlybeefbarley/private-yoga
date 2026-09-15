@@ -305,7 +305,7 @@ footer {
         gap: 1rem;
         font-size: 0.85rem;
         flex-wrap: wrap;
-        justify-content: flex-center;
+        justify-content: center;
     }
 
     section {
@@ -321,10 +321,6 @@ footer {
     .hero-content,
     .hero-image {
     width: 100%;
-    }
-
-    .hero {
-    flex-direction: column;
     }
 
     .about-content,
