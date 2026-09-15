@@ -26,18 +26,22 @@ h2 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     max-width: 800px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
 }
 
 p {
     max-width: 650px;
 }
 
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
 
 /* --------------------
    Navigation
@@ -223,11 +227,17 @@ footer {
 
 .steps {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .step {
     flex: 1;
+}
+
+.step h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #values {
@@ -288,7 +298,9 @@ footer {
 
     .nav-links {
         gap: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     section {
@@ -327,5 +339,10 @@ footer {
     #private-yoga {
     flex-direction: column;
     }
+
+    .steps {
+    flex-direction: column;
+    gap: 3rem;
+}
 }
 
