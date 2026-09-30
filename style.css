@@ -355,6 +355,10 @@ footer {
         width: 100%;
     }
 
+    .about-image img {
+    height: 350px;
+}
+
     #about {
         flex-direction: column;
     }
