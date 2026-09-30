@@ -134,10 +134,11 @@ A portion of my private-session income is donated to organizations supporting pe
     </p>
 
     <a
-        href="https://calendly.com/carly-d-coms/free-15-minute-yoga-consultation"
+        href=""
         class="button"
-        target="_blank"
-        rel="noopener noreferrer"
+        onclick="Calendly.initPopupWidget({
+            url: 'https://calendly.com/carly-d-coms/free-15-minute-yoga-consultation'
+        }); return false;"
     >
         Schedule a free consultation
     </a>
@@ -149,6 +150,13 @@ A portion of my private-session income is donated to organizations supporting pe
     <footer>
         <p>&copy; 2026 Carly Yoga</p>
     </footer>
+
+
+<script
+    src="https://assets.calendly.com/assets/external/widget.js"
+    type="text/javascript"
+    async>
+</script>
 
 </body>
 </html>
