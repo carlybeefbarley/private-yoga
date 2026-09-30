@@ -335,15 +335,17 @@ footer {
         padding: 5rem 6%;
     }
 
-    .hero {
-        min-height: 0;
-        flex-direction: row;
-        gap: 0;
-    }
+.hero {
+    min-height: 600px;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
 
-    .hero-content {
-        width: 100%;
-    }
+.hero-content {
+    width: 100%;
+    margin: 0;
+}
 
     .about-content,
     .about-image {
