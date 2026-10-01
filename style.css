@@ -145,12 +145,15 @@ section > * {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.9rem 1.5rem;
-    background-color: #2f302c;
+    background: #2f302c;
     color: white;
     text-decoration: none;
     border-radius: 3px;
-}
 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
 
 /* --------------------
    Photo placeholders
@@ -285,6 +288,47 @@ section > * {
     font-size: 2rem;
 }
 
+.email-inquiry {
+    max-width: 650px;
+    margin: 4rem auto 0;
+    text-align: left;
+}
+
+.email-inquiry h3,
+.email-inquiry > p {
+    text-align: center;
+}
+
+.email-inquiry form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-inquiry label {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.email-inquiry input,
+.email-inquiry textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+}
+
+.email-inquiry input {
+    height: 48px;
+}
+
+.email-inquiry textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.email-inquiry button {
+    align-self: center;
+}
 
 /* --------------------
    Lists
