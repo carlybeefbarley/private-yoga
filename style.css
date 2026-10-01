@@ -506,3 +506,36 @@ footer {
     width: 100%;
 }
 }
+
+/*----------------------------
+      Thank You
+-----------------------------*/
+
+/* --------------------
+   Thank You Page
+-------------------- */
+
+.thank-you {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5%;
+    background-color: #f7f5f0;
+    text-align: center;
+}
+
+.thank-you-content {
+    max-width: 650px;
+}
+
+.thank-you h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
