@@ -45,10 +45,6 @@ p {
     max-width: 650px;
 }
 
-#pricing {
-    background: #f0ede6;
-}
-
 .mobile-about-image {
     display: none;
 }
@@ -305,6 +301,49 @@ section > * {
     letter-spacing: 0.1em;
 }
 
+.approach-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+/* --------------------
+   Pricing
+-------------------- */
+
+#pricing {
+    background: #f0ede6;
+}
+
+.pricing-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-columns {
+    display: flex;
+    gap: 6rem;
+    align-items: flex-start;
+}
+
+.pricing-main,
+.pricing-details {
+    width: 50%;
+}
+
+.pricing-main p,
+.pricing-details p {
+    max-width: none;
+}
+
+.pricing-content > h2 {
+    margin-bottom: 3rem;
+}
+
+.pricing-details h3:first-child {
+    margin-top: 0;
+}
+
 
 /* --------------------
    Values
@@ -331,6 +370,13 @@ section > * {
     max-width: 1200px;
     min-height: 450px;
     margin: 0 auto;
+}
+
+.values-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
 }
 
 /* --------------------
@@ -413,6 +459,35 @@ footer {
     text-align: center;
     background-color: #2f302c;
     color: white;
+}
+
+/* --------------------
+   Thank You Page
+-------------------- */
+
+.thank-you {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5%;
+    background-color: #f7f5f0;
+    text-align: center;
+}
+
+.thank-you-content {
+    max-width: 650px;
+}
+
+.thank-you h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -609,37 +684,23 @@ footer {
     height: 350px;
     object-fit: cover;
 }
+
+.values-image img {
+    height: 220px;
 }
 
-/*----------------------------
-      Thank You
------------------------------*/
-
-/* --------------------
-   Thank You Page
--------------------- */
-
-.thank-you {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 5%;
-    background-color: #f7f5f0;
-    text-align: center;
+.approach-image img {
+    height: 350px;
 }
 
-.thank-you-content {
-    max-width: 650px;
+.pricing-columns {
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.thank-you h1 {
-    font-size: 2.75rem;
-    margin-bottom: 1.5rem;
+.pricing-main,
+.pricing-details {
+    width: 100%;
+}
 }
 
-.thank-you p {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
-}
