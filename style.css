@@ -583,6 +583,12 @@ footer {
 #approach .steps {
     width: 100%;
 }
+
+.values-image {
+    width: 100%;
+    min-height: 0;
+    height: 220px;
+}
 }
 
 /*----------------------------
