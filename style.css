@@ -45,6 +45,10 @@ p {
     max-width: 650px;
 }
 
+#pricing {
+    background: #f0ede6;
+}
+
 
 /* --------------------
    Navigation
@@ -257,13 +261,53 @@ section > * {
     margin-bottom: 1rem;
 }
 
+#approach {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.approach-image,
+.approach-content {
+    width: 50%;
+}
+
+.approach-image {
+    min-height: 500px;
+}
+
+#approach .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#approach .step h3 {
+    margin-bottom: 0.5rem;
+}
+
+#approach .step p {
+    margin-bottom: 0;
+}
+
+.placeholder-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dedbd3;
+    color: #6b6b65;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
 
 /* --------------------
    Values
 -------------------- */
 
 #values {
-    background-color: #f0ede6;
+    background: #f7f5f0;
     text-align: center;
 }
 
@@ -274,6 +318,16 @@ section > * {
     font-weight: 600;
 }
 
+.values-content {
+    max-width: 750px;
+    margin: 0 auto 4rem;
+}
+
+.values-image {
+    max-width: 1200px;
+    min-height: 450px;
+    margin: 0 auto;
+}
 
 /* --------------------
    Contact
@@ -282,6 +336,7 @@ section > * {
 #contact {
     text-align: center;
     padding: 4rem 5% 5rem;
+    background: #f0ede6;
 }
 
 #contact h2 {
