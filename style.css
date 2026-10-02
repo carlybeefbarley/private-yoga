@@ -567,9 +567,25 @@ footer {
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 0.5rem;
     }
+
+    .mobile-nav {
+    display: block;
+    width: auto;
+}
+
+.mobile-nav summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.mobile-nav summary::-webkit-details-marker {
+    display: none;
+}
 
     .nav-links {
         width: 100%;
