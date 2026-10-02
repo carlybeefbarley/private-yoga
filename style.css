@@ -49,6 +49,10 @@ p {
     display: none;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 
 /* --------------------
    Navigation
@@ -706,6 +710,14 @@ footer {
 .pricing-main,
 .pricing-details {
     width: 100%;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.mobile-nav {
+    display: block;
 }
 }
 
