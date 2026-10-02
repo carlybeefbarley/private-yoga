@@ -560,6 +560,29 @@ footer {
     display: block;
     width: 100%;
 }
+
+#approach {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.approach-content,
+.approach-image {
+    width: 100%;
+}
+
+.approach-content {
+    order: 1;
+}
+
+.approach-image {
+    order: 2;
+    min-height: 350px;
+}
+
+#approach .steps {
+    width: 100%;
+}
 }
 
 /*----------------------------
