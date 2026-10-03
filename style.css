@@ -745,9 +745,11 @@ footer {
 
 .mobile-nav-links {
     position: absolute;
-    left: 0;
-    right: 0;
     top: 100%;
+
+    right: -6vw;
+    width: 100vw;
+
     background: #f7f5f0;
     padding: 1rem 6%;
     display: flex;
