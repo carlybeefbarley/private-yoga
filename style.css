@@ -53,6 +53,9 @@ p {
     display: none;
 }
 
+header {
+    border-bottom: 1px solid rgba(47, 48, 44, 0.12);
+}
 
 /* --------------------
    Navigation
@@ -390,6 +393,13 @@ section > * {
     display: block;
 }
 
+#values p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* --------------------
    Contact
 -------------------- */
@@ -501,6 +511,108 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+/* --------------------------
+       Giving page
+----------------------------- */
+
+main .giving-intro,
+main .yamas,
+main .giving-practice,
+main .giving-organizations,
+main .giving-invitation {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.giving-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.giving-content p {
+    max-width: none;
+}
+
+.giving-organization h3 {
+    text-align: center;
+}
+
+.giving-invitation .button {
+    display: table;
+    margin: 2rem auto 0;
+}
+
+/* Intro */
+
+.giving-intro {
+    padding-top: 4rem;
+}
+
+.giving-intro h1 {
+    max-width: none;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+/* Yamas */
+
+.yamas h2 {
+    margin-bottom: 0;
+}
+
+/* Organizations */
+
+.organization-logo {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.organization-logo img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Desktop layouts */
+
+.giving-organization {
+    min-width: 0;
+}
+
+.giving-organization h3,
+.giving-organization p,
+.giving-organization a {
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+
+    .yamas .giving-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 4rem;
+        row-gap: 1.5rem;
+    }
+
+    .yamas h2 {
+        grid-column: 1 / -1;
+    }
+
+    .giving-organizations .giving-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 4rem;
+        row-gap: 1.5rem;
+    }
+
+    .giving-organizations h2,
+    .giving-organizations .giving-content > p {
+        grid-column: 1 / -1;
+    }
+}
 
 /* --------------------
    Tablet / smaller screens
