@@ -554,6 +554,8 @@ main .giving-invitation {
     margin-bottom: 2rem;
 }
 
+
+
 /* Yamas */
 
 .yamas h2 {
@@ -875,6 +877,10 @@ main .giving-invitation {
     text-decoration: none;
     font-size: 1rem;
     text-align: right;
+}
+
+.giving-intro h1 {
+    white-space: normal;
 }
 }
 
