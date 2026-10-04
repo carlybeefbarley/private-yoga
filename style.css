@@ -590,6 +590,15 @@ main .giving-invitation {
     overflow-wrap: anywhere;
 }
 
+.giving-organization > a:not(.organization-logo) {
+    color: #2f302c;
+    text-decoration-color: rgba(47, 48, 44, 0.4);
+    text-underline-offset: 4px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
 
     .yamas .giving-content {
