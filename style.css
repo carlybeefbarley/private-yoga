@@ -691,6 +691,38 @@ main .giving-invitation {
         font-size: 1.9rem;
     }
 
+
+.hero {
+    min-height: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    background-image: none;
+    background-color: #f7f5f0;
+}
+
+.hero-content {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 6%;
+    box-sizing: border-box;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+
+    background-image: url("images/wild-thing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
     h2 {
         font-size: 2rem;
     }
@@ -736,18 +768,6 @@ main .giving-invitation {
     section {
         padding: 5rem 6%;
     }
-
-.hero {
-    min-height: 600px;
-    padding: 3rem 6%;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-}
-.hero-content {
-    width: 100%;
-    margin: 0;
-}
 
     .about-content,
     .about-image {
