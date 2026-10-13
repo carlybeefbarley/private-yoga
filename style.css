@@ -124,18 +124,19 @@ section > * {
     display: flex;
     align-items: center;
 
-    background-image:
-        linear-gradient(
-            to right,
-            rgba(247, 245, 240, 0.9) 0%,
-            rgba(247, 245, 240, 0.7) 30%,
-            rgba(247, 245, 240, 0) 60%
-        ),
-        url("images/carly-yoga-lake.jpg");
+background-image:
+    linear-gradient(
+        to right,
+        rgba(247, 245, 240, 0.94) 0%,
+        rgba(247, 245, 240, 0.75) 25%,
+        rgba(247, 245, 240, 0.15) 48%,
+        rgba(247, 245, 240, 0) 60%
+    ),
+    url("images/wild-thing.jpg");
 
-    background-size: 115% auto;
-    background-position: 10% center;
-    background-repeat: no-repeat;
+background-size: 100% 100%, 130% auto;
+background-position: center, left center;
+background-repeat: no-repeat;
 }
 
 .hero-content {
