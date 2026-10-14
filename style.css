@@ -269,6 +269,13 @@ background-repeat: no-repeat;
 }
 
 
+#about h2,
+#private-yoga h2 {
+    color: #293f35;
+}
+
+
+
 /* --------------------
    Private yoga
 -------------------- */
@@ -332,6 +339,7 @@ background-repeat: no-repeat;
 }
 
 #approach {
+    background-color: #e6e9df;
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -381,8 +389,15 @@ background-repeat: no-repeat;
    Pricing
 -------------------- */
 
+
+
 #pricing {
-    background: #f0ede6;
+    background: #f4e8e5;
+}
+
+
+#pricing h2 {
+    color: #293f35;
 }
 
 .pricing-content {
@@ -422,6 +437,7 @@ background-repeat: no-repeat;
 #values {
     background: #f7f5f0;
     text-align: center;
+        padding-bottom: 3rem;
 }
 
 #values a {
@@ -467,6 +483,7 @@ background-repeat: no-repeat;
 }
 
 #contact h2 {
+    color: #293f35;
     font-size: 2rem;
 }
 
@@ -542,16 +559,31 @@ li {
 }
 
 
+
 /* --------------------
    Footer
 -------------------- */
 
 footer {
-    padding: 2rem 5%;
-    text-align: center;
-    background-color: #2f302c;
-    color: white;
+    background-color: #293f35;
+    color: #f5f1e8;
+    padding: 1.5rem 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+
 
 /* --------------------
    Thank You Page
