@@ -276,7 +276,11 @@ Yoga is more than a physical practice. Its teachings ask us to consider how we m
         No problem. Tell me a little about what you're looking for
         and I'll get back to you.
     </p>
-<form action="https://formspree.io/f/meaepqzj" method="POST">
+<form
+    id="yoga-inquiry"
+    action="https://formspree.io/f/meaepqzj"
+    method="POST"
+>
 
     <input
         type="hidden"
@@ -361,6 +365,43 @@ Yoga is more than a physical practice. Its teachings ask us to consider how we m
     });
 </script>
 <!-- Cal element-click embed code ends -->
+
+
+<script>
+    const inquiryForm = document.getElementById("yoga-inquiry");
+
+    inquiryForm.addEventListener("submit", async function(event) {
+        event.preventDefault();
+
+        const submitButton = inquiryForm.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        try {
+            const response = await fetch(inquiryForm.action, {
+                method: "POST",
+                body: new FormData(inquiryForm),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (response.ok) {
+                window.location.href = "/thanks.html";
+            } else {
+                throw new Error("Form submission failed");
+            }
+        } catch (error) {
+            alert("Sorry, something went wrong. Please try again.");
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+        }
+    });
+</script>
+
+
 
 </body>
 </html>
