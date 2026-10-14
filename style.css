@@ -927,6 +927,18 @@ main .giving-invitation {
     display: block;
 }
 
+.mobile-nav summary {
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    list-style: none;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mobile-nav-links {
     position: absolute;
     top: 100%;
