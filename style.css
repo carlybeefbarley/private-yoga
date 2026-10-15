@@ -1135,6 +1135,9 @@ background-color: #f3e8e5;
         margin: 2rem auto 0;
     }
 
+    .giving-organization + .giving-organization {
+    margin-top: 1.5rem;
+}
 
 }
 
