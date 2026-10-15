@@ -645,6 +645,61 @@ main .giving-invitation {
     margin: 2rem auto 0;
 }
 
+
+/* Giving page section backgrounds */
+
+
+.giving-intro,
+.yamas,
+.giving-organizations{
+    background-color: #f7f5f0;
+}
+
+.yamas {
+    background-color: #eeeae3;
+}
+
+.giving-practice {
+    background-color: #e8ede7;
+}
+
+.giving-invitation {
+background-color: #f3e8e5;
+}
+
+
+/* Giving page heading colors */
+
+.giving-intro h1,
+.yamas h2,
+.giving-organizations h2 {
+    color: #293f35;
+}
+
+/* Giving page introduction image */
+
+.giving-intro .olive-tree-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 2.5rem auto 0;
+}
+
+.giving-intro .olive-tree-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.giving-intro .olive-tree-image figcaption {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-top: 0.75rem;
+    color: #666;
+    text-align: center;
+}
+
+
+
 /* Intro */
 
 .giving-intro {
@@ -1071,5 +1126,15 @@ main .giving-invitation {
     .logo-mark {
         width: 110px;
     }
+
+
+    .giving-intro .olive-tree-image {
+        float: none;
+        width: 100%;
+        max-width: 450px;
+        margin: 2rem auto 0;
+    }
+
+
 }
 
