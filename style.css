@@ -1339,6 +1339,19 @@ main.about-page .about-photo-placeholder span {
 
 #about .about-more-link:hover { opacity: 0.7; }
 
+.about-page .about-photo-placeholder {
+    overflow: hidden;
+}
+
+.about-page .about-photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+object-position: 70% center;
+transform: translateX(5%) scale(1.2);
+    display: block;
+}
+
 /* --------------------
 
    Tablet / smaller screens
